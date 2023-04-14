@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>The Council Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    
+    <header>
+      🍽 The Council Recipes 🍽
+    </header>
+    
+    <section class="search-container">
+        <button class="random" 
+          onclick="random()" 
+          title="Random">⍰</button>
+      
+        <input type="text" 
+          id="userInp" 
+          placeholder="Search recipe..."
+          onkeypress="handleKeyPress(event)">
+      
+        <button class="search" 
+          onclick="search()" 
+          title="Search">🔎︎</button>
+    </section>
+    
+  <main>
+    <div class="filters-and-options">
+      
+      <nav>
+          <button id="closeBtn" 
+            onclick="hideAll()" 
+            class="close">✖</button>
+        
+          <div id="optcontainer">
+            <div class="select-box">
+              
+              <div class="options-container" id="fil">
+              </div>
+  
+                  <div class="selected" onclick="selectedfunc()">
+                    Filter by Region
+                  </div>
+
+              </div>
+            </div>
+
+          <div id="notoptcontainer">
+            <div class="notselect-box">
+            
+                <div class="notoptions-container" id="moreOptfil">
+                </div>
+
+                <div class="notselected" onclick="moreOptfunc()">
+                    More Options
+                </div>
+                
+            </div>
+        </div>
+        </nav>
+    </div>
+    
+    <article>
+      <section class="scrolable">
+        <table class="card">
+          <tbody id="result">
+          </tbody>
+        </table>
+      </section>
+
+      <aside id="aside">        
+        <ul id="mealDetail"></ul>
+      </aside>
+    </article>
+    
+    <script src="script.js"></script>
+  </main>
+
+  <footer>
+    Copyright © 2023 The Council, Inc.
+  </footer>
+
+</body>
+</html>

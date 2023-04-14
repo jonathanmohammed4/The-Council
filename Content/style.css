@@ -1,0 +1,430 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+header {
+  top: 0;
+  height: 80px;
+  display: flex;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  background-color: black;
+}
+
+footer {
+  margin-top: auto;
+  bottom: 0;
+  height: 80px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: black;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: column;
+  background-color: #30291F;
+}
+
+main{
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #30291F;
+  border-radius: 25px;
+}
+
+article{
+  display: flex;
+  flex-direction: row;
+  background-color: #30291F;
+}
+
+aside{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #30291F;
+}
+
+section{
+  display: flex;   
+  background-color: #30291F;
+  justify-content: space-evenly;
+}
+
+div {
+  justify-content: space-evenly;
+}
+
+pre{
+  text-align: left;
+  display: flex;
+  white-space: pre-wrap;
+  background-color: #30291F;
+}
+
+table{
+  border-collapse: collapse;
+  width:100%;
+  height:100%;
+  background-color: #30291F;
+}
+
+tr, td {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+  background-color: #30291F;
+}
+
+tr:nth-child(even){
+  background-color: #30291F;
+}
+
+tr:hover {
+  background-color: #30291F;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 20px;
+  background-color: #30291F;
+}
+
+button {
+  background-color: #5D3700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #754400;
+}
+
+input[type="text"] {
+  justify-content: center;
+  width: 600px;
+  padding: 8px;
+  font-size: 20px;
+  background: #474139;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="text"]:focus{
+  background-color: #474139;
+  color: #ffffff;
+}
+
+.card{
+  border-radius: 5px;
+  font-size: 0.7em;
+  padding: 8px;
+  background-color: #30291F;
+}
+
+.search-container {
+  display: flex;
+  font-size: 0.7em;
+  margin: 20px 0px 20px 0px;
+  padding: 20px;
+  background-color: #30291F;
+  justify-content: center;
+}
+
+.search {
+  justify-content: center;
+  border-radius: 0px 20px 20px 0px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #474139;
+  border: none;
+  cursor: pointer;
+}
+
+.random {
+  justify-content: center;
+  border-radius: 20px 0px 0px 20px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #474139;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  padding: 8px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+#closeBtn{
+  display: none;
+}
+   
+.scrollable{
+  display:flex;
+  flex-grow: 4;
+  max-height: 80vh;
+}
+
+.hide-ingredients {
+  border: none;
+  background-color: #30291F;
+  color: black;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.Vdetails{
+  background: rgba(255, 255, 255, 0) ;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #30291F;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #30291F;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+  background-color: #30291F;
+}
+
+.container:hover .overlay {
+  opacity: 0.75;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474139; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #625b50; 
+}
+
+*:hover::-webkit-scrollbar-thumb{
+  background: #70685c;
+}
+
+#details {
+  display: block;
+  font-size: 25px;
+  margin: 5px;
+  padding: 8px;
+  background-color: #30291F;
+  text-align: center;
+}
+
+#recipe {
+  display: block;
+  font-size: 15px;
+  margin: 5px;
+  padding: 15px;
+  background-color: #30291F;
+}
+
+#ingredients {
+  display: block;
+  font-size: 15px;
+  margin: 5px;
+  padding: 8px;
+  background-color: #30291F;
+}
+
+#result {
+  display:flex;
+  flex-grow: 4;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background-color: #30291F;;
+}
+
+#mealDetail {
+  display:flex;
+  flex-grow: 4;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background-color: #30291F;
+}
+
+#optcontainer{
+  padding: 32px;
+  float: right;
+}
+
+.select-box{
+  display: flex;
+  width: 175px;
+  flex-direction: column;
+}
+
+.selected{
+  background-color: #5D3700;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  display: none;
+  
+  order: 0;
+}
+
+.select-box .options-container{
+  background-color: #754400;
+  color: white;
+  max-height: 0; 
+  width: 100%;
+  opacity: 0;
+  transition: .9s;
+  border-radius: 10px;
+  overflow: hidden;
+  order: 1;
+}
+
+.select-box .option, .selected{
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .option:hover{
+  background-color: #5D3700;
+}
+
+.select-box label{
+  cursor: pointer;
+}
+
+.radio{
+  display: none;
+}
+
+.select-box .options-container.active{
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+/* View Dropdown CSS */
+
+#notoptcontainer{
+  padding: 32px;
+  float: right;
+}
+
+.notselect-box{
+  display: flex;
+  width: 175px;
+  flex-direction: column;
+}
+
+.notselected{
+  background-color: #5D3700;
+  border-radius: 10px;
+  width: 175px;
+  color: white;
+  position: relative;
+  display: none;
+  order: 0;
+}
+
+.notselect-box .notoptions-container{
+  background-color: #754400;
+  color: white;
+  max-height: 0; 
+  width: 100%;
+  opacity: 0;
+  transition: .9s;
+  border-radius: 10px;
+  overflow: hidden;
+  order: 1;
+}
+
+.notoption{
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.notselected{
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.notselect-box .notoption:hover{
+  background-color: #5D3700;
+}
+
+.notselect-box label{
+  cursor: pointer;
+}
+
+.notradio{
+  display: none;
+}
+
+.notselect-box .notoptions-container.notactive{
+  max-height: 120px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+div.filters-and-options{
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  div, article, aside {
+    flex-direction: column;
+  }
+}
